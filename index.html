@@ -1,1 +1,32 @@
-hola 
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Selecciona una Materia</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Selecciona tu Materia</h1>
+  </header>
+
+  <main>
+    <!-- Sección de materias -->
+    <section id="materias">
+      <button class="materia-btn" onclick="mostrarProfesor('Matemáticas')">Matemáticas</button>
+      <button class="materia-btn" onclick="mostrarProfesor('Física')">Física</button>
+      <button class="materia-btn" onclick="mostrarProfesor('Química')">Química</button>
+      <button class="materia-btn" onclick="mostrarProfesor('Biología')">Biología</button>
+    </section>
+
+    <!-- Sección de información del profesor -->
+    <section id="profesor-info" style="display: none;">
+      <button id="volver" onclick="volverALista()">← Volver</button>
+      <div id="profesor-detalles"></div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

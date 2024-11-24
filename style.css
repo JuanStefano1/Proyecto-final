@@ -1,0 +1,108 @@
+/* Reset básico */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  
+  header {
+    background-color: #0026ff;
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+  }
+  
+  h1 {
+    margin: 0;
+  }
+  
+  main {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Botones de materias */
+  #materias {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+  }
+  
+  .materia-btn {
+    background-color: #0026ff;
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .materia-btn:hover {
+    background-color: #0026ff;
+  }
+  
+  /* Sección de información del profesor */
+  #profesor-info {
+    text-align: center;
+    margin-top: 2rem;
+  }
+  
+  #volver {
+    background-color: #ddd;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+  }
+  
+  #volver:hover {
+    background-color: #bbb;
+  }
+  
+  #profesor-detalles {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    max-width: 100%;  /* Ancho completo del contenedor */
+    margin: auto;
+    display: flex;  /* Usamos flexbox para alinear los profesores horizontalmente */
+    flex-wrap: wrap;  /* Permite que los elementos se muevan a la siguiente línea si no caben */
+    gap: 1rem;  /* Espaciado entre los elementos */
+    justify-content: center;  /* Centra los elementos dentro del contenedor */
+  }
+  
+  /* Estilo para cada detalle del profesor */
+  .profesor-detalle {
+    background-color: #f0f0f0;
+    padding: 1rem;
+    width: 300px;  /* Define un ancho para que los elementos se distribuyan bien */
+    margin: 0;  /* Eliminamos el margen inferior */
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;  /* Aseguramos que los detalles del profesor se apilen verticalmente */
+    align-items: center;  /* Centra el contenido dentro de cada detalle */
+    text-align: center;  /* Centra el texto */
+  }
+  
+  /* Ajustes de estilo de texto para los detalles del profesor */
+  .profesor-detalle h3 {
+    margin: 0;
+    font-size: 1.5rem;
+  }
+  
+  .profesor-detalle p {
+    margin: 0.5rem 0;
+  }
+  
